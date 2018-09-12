@@ -22,17 +22,20 @@ class Editor extends Field
     ];
     public function render()
     {
-
-        $this->value;
-        $this->column;
         $json = old($this->column, $this->value);
         if (empty($json)) {
             $json = json_encode([]);
         }
+
+        $options = json_encode(config('admin.extensions.json-editor.config'));
+        if(empty($options)) {
+            $options = "{}";
+        }
+
         $this->script = <<<EOT
 // create the editor
 var container = document.getElementById("{$this->id}");
-var options = {};
+var options = {$options};
 var editor = new JSONEditor(container, options);
 
 // set json
