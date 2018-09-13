@@ -2,6 +2,8 @@
 
 这是一个`laravel-admin`扩展，用来将 [JSON Editor](https://github.com/josdejong/jsoneditor) 集成进`laravel-admin`中。
 
+[DEMO](http://demo.laravel-admin.org/editors/json) Login using `admin/admin`
+
 <img src="https://user-images.githubusercontent.com/2421068/45437866-4d478200-b6e8-11e8-930b-7665ad407096.png">
 
 ## 安装
