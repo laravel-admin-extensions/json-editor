@@ -46,6 +46,9 @@ Use it in the form form:
 $form->json('content');
 ```
 
+## More resources
+
+[Awesome Laravel-admin](https://github.com/jxlwqq/awesome-laravel-admin)
 
 ## License
 
