@@ -21,7 +21,11 @@ class Editor extends Field
         $json = old($this->column, $this->value());
 
         if (empty($json)) {
-            $json = json_encode([]);
+            $json = '{}';
+        }
+
+        if (!is_string($json)) {
+            $json = json_encode($json);
         }
 
         $options = json_encode(config('admin.extensions.json-editor.config'));
