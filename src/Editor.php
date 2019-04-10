@@ -47,7 +47,7 @@ editor.set(json);
 // get json
 $('button[type="submit"]').click(function() {
 var json = editor.get()
-$('input[name={$this->id}]').val(JSON.stringify(json))
+$('input[id={$this->id}_input]').val(JSON.stringify(json))
 })
 EOT;
 
