@@ -38,15 +38,15 @@ class Editor extends Field
 // create the editor
 var container = document.getElementById("{$this->id}");
 var options = {$options};
-var editor = new JSONEditor(container, options);
+window['editor_{$this->id}'] = new JSONEditor(container, options);
 
 // set json
 var json = {$json};
-editor.set(json);
+window['editor_{$this->id}'].set(json);
 
 // get json
 $('button[type="submit"]').click(function() {
-var json = editor.get()
+var json = window['editor_{$this->id}'].get()
 $('input[id={$this->id}_input]').val(JSON.stringify(json))
 })
 EOT;
