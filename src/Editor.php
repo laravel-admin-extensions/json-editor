@@ -26,7 +26,10 @@ class Editor extends Field
 
         if (!is_string($json)) {
             $json = json_encode($json);
+        } else {
+            $json = json_encode(json_decode($json,true));   //兼容json里有类似</p>格式，首次初始化显示会丢失的问题
         }
+        $this->value = $json;
 
         $options = json_encode(config('admin.extensions.json-editor.config'));
 
