@@ -10,14 +10,15 @@ This is a `laravel-admin` extension that integrates [JSON Editor](https://github
 
 ## Installation
 
-First, install dependencies:
 ```bash
 composer require jxlwqq/json-editor
+php artisan vendor:publish --tag=laravel-admin-json-editor
 ```
 
-Then, publish the resource directory:
+## Update
 ```bash
-php artisan vendor:publish --tag=laravel-admin-json-editor
+composer require jxlwqq/json-editor
+php artisan vendor:publish --tag=laravel-admin-json-editor --force
 ```
 
 ## Configuration
