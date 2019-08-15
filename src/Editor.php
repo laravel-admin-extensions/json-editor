@@ -9,11 +9,11 @@ class Editor extends Field
     protected $view = 'laravel-admin-json-editor::editor';
 
     protected static $css = [
-        'vendor/laravel-admin-ext/json-editor/jsoneditor-5.24.6/dist/jsoneditor.min.css',
+        'vendor/laravel-admin-ext/json-editor/jsoneditor-6.2.1/dist/jsoneditor.min.css',
     ];
 
     protected static $js = [
-        'vendor/laravel-admin-ext/json-editor/jsoneditor-5.24.6/dist/jsoneditor.min.js',
+        'vendor/laravel-admin-ext/json-editor/jsoneditor-6.2.1/dist/jsoneditor.min.js',
     ];
 
     public function render()
