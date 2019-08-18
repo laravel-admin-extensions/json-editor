@@ -53,4 +53,4 @@ $form->json('content');
 
 ## License
 
-Licensed under [The MIT License (MIT)] (LICENSE).
+Licensed under [The MIT License](LICENSE).
