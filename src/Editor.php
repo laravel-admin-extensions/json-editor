@@ -51,7 +51,7 @@ window['editor_{$this->id}'].set(json);
 $('button[type="submit"]').click(function() {
 var json = window['editor_{$this->id}'].get()
 $('input[id={$this->id}_input]').val(JSON.stringify(json))
-})
+});
 EOT;
 
         return parent::render();
