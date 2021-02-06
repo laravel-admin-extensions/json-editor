@@ -2,7 +2,7 @@
 
 This is a `laravel-admin` extension that integrates [JSON Editor](https://github.com/josdejong/jsoneditor) into `laravel-admin`.
 
-[DEMO](http://demo.laravel-admin.org/editors/json) Login using `admin/admin`
+[DEMO](https://demo.laravel-admin.org/auth/login) Login using `admin/admin`
 
 ## Screenshot
 
